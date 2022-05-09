@@ -5,11 +5,23 @@
 <h1>Posts</h1>
 <ol>
     <% results.forEach(function(post) {%>
+           
         <li>
+            <%= post.userId %>
+            <%= post.createdAt %>
+            <br />
             <%= post.message %>
+            <br />
+            <img src = "<%= post.imageUrl %>" width = "150" height = "150">
         </li>
     <% }); %>
 </ol>
+<%if (next) { %>
+    <a href="<%= next %>">Next</a>
+<% } %>
+<%if (previous) { %>
+    <a href="<%= previous %>">Previous</a>
+<% } %>
 </body>
 <%- include('_footer') -%>
 </html>
