@@ -7,10 +7,15 @@
     <% results.forEach(function(post) {%>
            
         <li>
-            <%= post.userId %>
+            <%= post.postedBy.name %>
+            <br />
+            <%= post.id %>
+            <br />
             <%= post.createdAt %>
             <br />
             <%= post.message %>
+            <br />
+            <%= post.likedBy.name %>
             <br />
             <img src = "<%= post.imageUrl %>" width = "150" height = "150">
         </li>
@@ -22,6 +27,8 @@
 <%if (previous) { %>
     <a href="<%= previous %>">Previous</a>
 <% } %>
+<br />
+<a href = "/posts/create/">Create Post</a>
 </body>
 <%- include('_footer') -%>
 </html>
