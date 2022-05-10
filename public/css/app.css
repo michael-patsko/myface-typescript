@@ -25,6 +25,13 @@ ol.post-list li {
     font-size: 22;
 }
 
+.post-profile-image {
+    border-style: double;
+    margin: 5px 5px 10px 0px;
+    width: 4vw;
+    height: 4vw;
+}
+
 .post-date{
     font-size: 14;
     color: lightgrey;
@@ -34,6 +41,8 @@ ol.post-list li {
 .post-image {
     border-style: double;
     margin: 0px 5px 10px 0px;
+    width: 15vw;
+    height: 15vw;
 }
 
 ol.user-list li {
@@ -55,6 +64,8 @@ ol.user-list li {
 .users-profile-image {
     border-style: double;
     margin: 5px 5px 10px 0px;
+    width: 5vw;
+    height: 5vw;
 }
 
 .users-cover-image {
