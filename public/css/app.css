@@ -1,14 +1,79 @@
 /* Add your styles here. */
 h1 {
     font-family:  Verdana, sans-serif;
-    font-weight: normal;
+    font-weight: bold;
+    color: dodgerblue;
+    margin-left: 1vw;
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
+    border-color: black;
 }
 
-ol.post-list li{
+ol.post-list li {
     list-style-type: none;
     font-family: Helvetica, sans-serif;
     border-style: groove;
     margin: 25px 10px 25px 5px;
     padding: 10px 10px 10px 10px;
-    width: 35vw;
+    width: 36vw;
+    background-color: rgb(233, 237, 241);
+}
+
+.post-user-name {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 22;
+}
+
+.post-date{
+    font-size: 14;
+    color: lightgrey;
+    margin: 2px 0px 2px 0px;
+}
+
+.post-image {
+    border-style: double;
+    margin: 0px 5px 10px 0px;
+}
+
+ol.user-list li {
+    list-style-type: none;
+    font-family: Helvetica, sans-serif;
+    border-style: groove;
+    margin: 25px 10px 25px 5px;
+    padding: 10px 10px 10px 10px;
+    width: 36vw;
+    background-color: rgb(233, 237, 241);
+}
+
+.users-user-name {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 22;
+}
+
+.users-profile-image {
+    border-style: double;
+    margin: 5px 5px 10px 0px;
+}
+
+.users-cover-image {
+    margin: 0px 0px 5px 0px;
+    width: 36vw;
+    height: 12vw;
+    opacity: 1;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: dodgerblue;
 }

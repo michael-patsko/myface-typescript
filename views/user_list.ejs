@@ -3,14 +3,16 @@
 <%- include('_header') -%>
 <body>
 <h1>Users</h1>
-<ol>
+<ol class = "user-list">
     <% results.forEach(function(user) {%>
         <li>
-            <%= user.name %>
+            <img class = "users-cover-image" src = "<%= user.coverImageUrl %>">
             <br />
-            <a href = "/users/<%= user.id %>/"><%= user.username %></a>
+            <a class = "users-user-name" href = "/users/<%= user.id %>/"><%= user.name %></a>
             <br />
-            <img src = "<%= user.profileImageUrl %>" width = "200" height = "200">
+            @<%= user.username %>
+            <br />
+            <img class = "users-profile-image" src = "<%= user.profileImageUrl %>" width = "200" height = "200">
         </li>
     <% }); %>
 </ol>

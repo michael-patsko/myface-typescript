@@ -4,18 +4,17 @@
 <body>
 <h1>Posts</h1>
 <ol class = "post-list">
-    <% results.forEach(function(post) {%>
-           
+    <% results.forEach(function(post) {%>  
         <li>
-            <a href = "/users/<%= post.postedBy.id %>/"><%= post.postedBy.name %></a>
+            <a class = "post-user-name" href = "/users/<%= post.postedBy.id %>/"><%= post.postedBy.name %></a>
             <br />
-            <%= post.createdAt %>
+            <p class = "post-date"><%= post.createdAt %></p>
             <br />
             <%= post.message %>
             <br />
             <%= post.likedBy.name %>
             <br />
-            <img src = "<%= post.imageUrl %>" width = "150" height = "150">
+            <img class = "post-image" src = "<%= post.imageUrl %>" width = "200" height = "200">
             <br />
             <a href = "/posts/:<%= post.id %>/like/">Like</a>
             <a href = "/posts/:<%= post.id %>/dislike/">Dislike</a>
