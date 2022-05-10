@@ -7,6 +7,10 @@
     <% results.forEach(function(user) {%>
         <li>
             <%= user.name %>
+            <br />
+            <a href = "/users/<%= user.id %>/"><%= user.username %></a>
+            <br />
+            <img src = "<%= user.profileImageUrl %>" width = "200" height = "200">
         </li>
     <% }); %>
 </ol>
@@ -16,6 +20,8 @@
 <%if (previous) { %>
     <a href="<%= previous %>">Previous</a>
 <% } %>
+<br />
+<a href = "/users/create/">Create User</a>
 </body>
 <%- include('_footer') -%>
 </html>
