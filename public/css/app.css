@@ -1,4 +1,9 @@
 /* Add your styles here. */
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 14;
+}
+
 h1 {
     font-family:  Verdana, sans-serif;
     font-weight: bold;
@@ -73,6 +78,11 @@ ol.user-list li {
     width: 36vw;
     height: 12vw;
     opacity: 1;
+}
+
+.simple-list {
+    list-style-type: none;
+    font-family: Helvetica, sans-serif;
 }
 
 a:link {

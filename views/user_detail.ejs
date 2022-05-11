@@ -2,7 +2,14 @@
 <%- include('_head') -%>
 <%- include('_header') -%>
 <body>
-<h1><%= name %></h1>
+<h1>
+    <%= name %>
+    <img class = "users-profile-image" src = <%= profileImageUrl %>>
+</h1>
+<ol class = "simple-list">
+    <li>@<%= username %></li>
+    <li>Email: <%= email %></li>
+</ol>
 </body>
 <%- include('_footer') -%>
 </html>
